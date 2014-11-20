@@ -1,4 +1,5 @@
-
+#! /usr/bin/env python
+# --*-- coding: utf-8 --*--
 
 #Example: hello.py
 
@@ -9,9 +10,12 @@ app = Flask(__name__)
 def index():
     return '<h1>Hello World!</h1>'
 
+
+
 @app.route ('/kigali')
-def index():
+def func():
     return "I am in the capital of Rwanda"
+
 
 
 @app.route('/user/<name>')
